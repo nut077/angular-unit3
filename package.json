@@ -4,18 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently --kill-others \"npm run compile\" \"npm run watch\"",
+    "compile": "tsc index.ts --watch",
+    "watch": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.4.0",
-    "nodemon": "^1.11.0",
-    "typescript": "^2.2.2"
-  },
-  "scripts" : {
-    "start": "concurrently --kill-others \"npm run compile\" \"npm run watch\"",
-    "compile": "tsc index.ts --watch",
-    "watch": "nodemon index.js"
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
   }
 }
