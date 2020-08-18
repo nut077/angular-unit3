@@ -1,4 +1,4 @@
-let isDone: boolean = true;
+/*let isDone: boolean = true;
 let decimal: number = 7;
 let color: string = 'blue';
 let list: number[] = [1, 2, 3];
@@ -365,4 +365,4 @@ class Person2 {
 }
 const freedomeiei = new Person2();
 //freedomeiei.firstName = 'Freedom';
-//freedomeiei.firstName = '111'; error
+//freedomeiei.firstName = '111'; error*/
